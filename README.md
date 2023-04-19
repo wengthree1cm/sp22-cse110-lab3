@@ -1,3 +1,3 @@
 # Lab 2 - Starter
 
-[URL](https://wengthree1cm.github.io/Lab2_Starter/index.html)
+[URL](wengthree1cm.github.io/sp22-cse110-lab3)
