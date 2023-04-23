@@ -1,2 +1,2 @@
-Mood: :smile:
+Mood: :smile:  
 Today: Finish homework
