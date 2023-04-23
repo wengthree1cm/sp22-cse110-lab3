@@ -1,0 +1,156 @@
+body{/*background*/
+    background-color: green;
+}
+@media screen and (min-width: 600px) {/* query */
+    body {
+      background-color: red;
+    }
+}
+
+@font-face {/* font*/
+    font-family: myFontsName;
+    src: url(Oswald-VariableFont_wght.ttf);
+}
+h1{/*three absolute unit
+     Text
+     position*/
+    font-family: myFontsName;
+    color:brown;
+    width: 500px;
+    font-size: 1.5cm;
+    line-height: 1in;
+    text-decoration: overline;
+    position: relative;
+}
+
+h2{/*three relative unit*/
+    color:aqua;
+    font-size: 3ch;
+    line-height:2em;
+    border:3rem;
+}
+
+p{/* element selector */
+    color:black;
+}
+
+#s{/* id selector */
+    color: red;
+}
+
+.ss{/* class selector */
+    color: wheat;
+}
+*{/* universal selector */
+    font-weight: bold;
+}
+p[target="fool"]{/* attribute selector */
+    background-color: yellow;
+}
+
+div p {/* descendant combinator selector*/
+    background-color: yellow;
+}
+h4, h5{/* list selector*/
+    color:aquamarine;
+}
+div > h6{/* child selector*/
+    background-color: black;
+}
+div + p {/*Adjacent sibling combinator*/
+    background-color: purple;
+}
+div ~ h2 {/*General sibling combinator*/
+    background-color: blue;
+}
+
+p.e1 {/*block
+        combining two selector*/
+    display:block;
+}
+
+p.e2{/* inline block*/
+    display:inline-block;
+}
+p.e3{
+    display:flex;
+}
+
+
+.flex-container {/*flexbox */
+    display: flex;
+    background-color: DodgerBlue;
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    
+}
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 1px;
+    padding: 2px;
+    font-size: 15px;
+    width: 50px;
+}
+
+.box{
+    flex-wrap: wrap;
+    flex-basis: 27%;
+    flex-direction: column;
+}
+
+.grid-container{/*grid*/
+display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-gap: 10px; /* specify the gap between grid items */
+    justify-items: center; /* horizontally center grid items within each grid cell */
+    align-items: center;
+}
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 1px;
+  font-size: 15px;
+  text-align: center;
+  width: 50px;
+}
+
+div {/*box model
+       sizing
+       position*/
+    position: static;
+    width: 300px;
+    border: 15px solid green;
+    border-style: dotted;
+    border-color: black;
+    border-width: 20px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px; 
+}
+
+
+a:link{/*pseudo class*/
+    color:red;
+}
+a:hover{/* pseudo class selector */
+    color:green;
+}
+a:active{
+    color:hotpink;
+}
+
+@font-face {
+    font-family: myFontsName;
+    src: url(exact_filepath_from_this_stylesheet_to_font.woff);
+}
+
+
+
+
+
+
+
+
+
+
