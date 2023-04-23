@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="mystyle.css">
     <style>
         .ss {
           background-color: lightblue;
@@ -16,8 +17,13 @@
         <h2>date: 2023/4/12</h2>
     </header>
     
+    <h4>
+        this is list selector 
+    </h4>
+    <h5>this is list selector</h5>
+
     <section>
-        <h3>attendance list</h3>
+        <h3 id="s">attendance list</h3>
 		<ul>
 			<li><i>Jim</i></li>
 			<li><i>Mike</i></li>
@@ -26,15 +32,15 @@
     </section>
     <details>
         <summary>what this page has</summary>
-        <p>agenda<br>business<br>questions<br>diagrams<br>video and audio<br>form</p>
+        <p target="fool">agenda<br>business<br>questions<br>diagrams<br>video and audio<br>form</p>
     </details>
     <main>
 
         <section>
-            <h3>agenda</h3>
+            <h3 class="ss">agenda</h3>
             <ol>
                 <li>Check attendence</li>
-                <li>discuss code</li>
+                <li style="color:red">discuss code</li>
                 <li>debug together</li>
                 <li><a href="https://canvas.ucsd.edu/courses/44983/assignments/617848">go over canvas</a></li>
               </ol>
@@ -50,23 +56,40 @@
             </section>
         </nav>
         
-        
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+        </div>
         <section>
             <h3>new business</h3>
-            <p>find potential better algorithms</p>
+            <div class="flex-container">
+            <p><div class="box">find</div> <div class="box"><p class="e1">potential</p></div> <div class="box">better</div><div>algorithms</div></p>
+            </div>
         </section>
         <div class="ss">
+            <h6>selector</h6>
             <section>
                 <h3>questions</h3>
-                <p>how can we balance the workload of <br>each teammates?</p>
+                
+                
+                <p>how can <p class="e2">we</p> balance the workload of <br>each teammates?</p>
+                
+                
     
                 <hr>
     
                 <p>is next meeting time on <span style="color:crimson">Wednesday</span> ok?</p>
             </section>
         </div>
-        
-
+        <p>right next to div</p>
+        <p>not right next to div</p>
+        <h2>sibling</h2>
+        <h2>sibling2</h2>
         <section>
             <h2>diagram</h2>
             <img src="white.jfif" alt="board">
